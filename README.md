@@ -7,6 +7,7 @@ El proyecto es un API que optimiza la cantidad de items que pueden obtenerse con
 1. [Requisitos](#requisitos)
 2. [Ejecución](#ejecución)
 2. [Arquitectura](#arquitectura)
+3. [Pruebas](#pruebas)
 
 
 
@@ -37,3 +38,11 @@ Para este proyecto se crea un API-REST en Spring que consume un API externa.
 También se ha desplegado en Google Cloud Run en la siguiente URL: https://www.google.com.
 ![Image Text](Diagrama.png)
 ![Image Text](Diagrama%20despliegue.png)
+
+
+## Pruebas
+Para ejecutar las pruebas ejecutar el siguiente comando:
+```
+$ mvn clean test
+```
+Esto creara en el directorio "target/site/jacoco/" un archivo "index.html" que contiene el reporte de coverage de las pruebas automaticas.
