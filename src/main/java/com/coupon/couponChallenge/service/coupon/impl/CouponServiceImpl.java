@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Log4j2
 @Service
@@ -44,9 +45,11 @@ public class CouponServiceImpl implements CouponService {
 
     public Map<String, Float> getItemsPrice(List<String> favorite_items){
         log.info(CouponConstants.Message.START_GETTING_PRODUCTS_PRICES);
+
         Map<String, Float> items = null;
         try {
-             items = couponRepository.getProductsPrices(favorite_items);
+             items = couponRepository.getProductsPrices(favorite_items.stream()
+                     .distinct().collect(Collectors.toList()));
         }catch (Exception e){
             log.info("ERROR GETTING PRODUCTS PRICES");
             log.error(e);
