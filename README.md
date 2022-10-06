@@ -10,6 +10,7 @@ El proyecto es un API que optimiza la cantidad de items que pueden obtenerse con
 2. [Arquitectura](#arquitectura)
 3. [Pruebas](#pruebas)
 4. [Coverage](#coverage)
+5. [Postman Collection](#postman_collection)
 
 
 
@@ -42,8 +43,8 @@ Para acceder a la documentación del API desplegada en el hosting de google pued
 ## Arquitectura
 Para este proyecto se crea un API-REST en Spring que consume un API externa. 
 También se ha desplegado en Google Cloud Run en la siguiente URL: https://coupon-challenge-o52mrrclda-uc.a.run.app
-![Image Text](Diagrama.png)
-![Image Text](Diagrama%20despliegue.png)
+![Image Text](assets/Diagrama.png)
+![Image Text](assets/Diagrama%20despliegue.png)
 
 
 ## Pruebas
@@ -55,4 +56,7 @@ Esto creara en el directorio "target/site/jacoco/" un archivo "index.html" que c
 
 
 ## Coverage
-![Image Text](Coverage.png)
+![Image Text](assets/Coverage.png)
+
+## Postman Collection
+Se anexa la colección de postoman para pruebas: [here](assets/Coupon Challenge.postman_collection.json)

@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "62626b9f-e28b-4bba-9f06-d18f25bc7816",
+		"name": "Coupon Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14824792"
+	},
+	"item": [
+		{
+			"name": "Found Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item_ids\": [\"MLA811601010\", \"MLA816019440\", \"MLA19049556\", \"MLA810645375\", \"MLA805330648\", \"MLA844702264\", \"MLA599260060\", \"MLA594239600\"],\n    \"amount\": 5000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/coupon",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"coupon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Not Found Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item_ids\": [\"MLA811601010\", \"MLA816019440\", \"MLA19049556\", \"MLA810645375\", \"MLA805330648\", \"MLA844702264\", \"MLA599260060\", \"MLA594239600\", \"MLA19049556\", \"MLA844702264\"],\n    \"amount\": 5000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}coupon",
+					"host": [
+						"{{endpoint}}coupon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bad Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/coupon",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"coupon"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "endpoint",
+			"value": "https://coupon-challenge-o52mrrclda-uc.a.run.app/",
+			"type": "string"
+		}
+	]
+}
