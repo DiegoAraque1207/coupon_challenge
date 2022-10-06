@@ -6,8 +6,10 @@ El proyecto es un API que optimiza la cantidad de items que pueden obtenerse con
 ## Table of Contents
 1. [Requisitos](#requisitos)
 2. [Ejecución](#ejecución)
+3. [Documentación del API](#documentación_api)
 2. [Arquitectura](#arquitectura)
 3. [Pruebas](#pruebas)
+4. [Coverage](#coverage)
 
 
 
@@ -32,6 +34,10 @@ $ docker build .
 $ docker-compose up
 ```
 
+## Documentación API
+Para acceder a la documentación del API puede hacerlo desde este enlace en local: http://localhost:8080/swagger-ui.html
+***
+Para acceder a la documentación del API desplegada en el hosting de google puede hacerlo en este enlace: 
 
 ## Arquitectura
 Para este proyecto se crea un API-REST en Spring que consume un API externa. 
@@ -46,3 +52,7 @@ Para ejecutar las pruebas ejecutar el siguiente comando:
 $ mvn clean test
 ```
 Esto creara en el directorio "target/site/jacoco/" un archivo "index.html" que contiene el reporte de coverage de las pruebas automaticas.
+
+
+## Coverage
+![Image Text](Coverage.png)
