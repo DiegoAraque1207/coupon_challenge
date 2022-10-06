@@ -79,8 +79,6 @@ class CouponServiceImplTest {
     }
     @Test
     void getItemsPriceError() {
-        when(couponRepository.getProductsPrices(any())).thenThrow(HttpServerErrorException.InternalServerError.class);
-        ;
         try {
             Map<String, Float>  productPrices = couponService.getItemsPrice(null);
              assertNull(productPrices);
