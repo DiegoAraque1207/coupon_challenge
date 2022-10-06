@@ -6,11 +6,11 @@ El proyecto es un API que optimiza la cantidad de items que pueden obtenerse con
 ## Table of Contents
 1. [Requisitos](#requisitos)
 2. [Ejecución](#ejecución)
-3. [Documentación del API](#documentación_api)
+3. [Documentación del API](#documentación-api)
 2. [Arquitectura](#arquitectura)
 3. [Pruebas](#pruebas)
 4. [Coverage](#coverage)
-5. [Postman Collection](#postman_collection)
+5. [Postman Collection](#postman-collection)
 
 
 
@@ -59,4 +59,4 @@ Esto creara en el directorio "target/site/jacoco/" un archivo "index.html" que c
 ![Image Text](assets/Coverage.png)
 
 ## Postman Collection
-Se anexa la colección de postoman para pruebas: [here](assets/Coupon Challenge.postman_collection.json)
+Se anexa la colección de postoman para pruebas: [here](https://github.com/DiegoAraque1207/coupon_challenge/blob/main/assets/Coupon%20Challenge.postman_collection.json)
