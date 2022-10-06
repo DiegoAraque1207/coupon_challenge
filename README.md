@@ -37,11 +37,11 @@ $ docker-compose up
 ## Documentación API
 Para acceder a la documentación del API puede hacerlo desde este enlace en local: http://localhost:8080/swagger-ui.html
 ***
-Para acceder a la documentación del API desplegada en el hosting de google puede hacerlo en este enlace: 
+Para acceder a la documentación del API desplegada en el hosting de google puede hacerlo en este enlace: https://coupon-challenge-o52mrrclda-uc.a.run.app/swagger-ui/index.html
 
 ## Arquitectura
 Para este proyecto se crea un API-REST en Spring que consume un API externa. 
-También se ha desplegado en Google Cloud Run en la siguiente URL: https://www.google.com.
+También se ha desplegado en Google Cloud Run en la siguiente URL: https://coupon-challenge-o52mrrclda-uc.a.run.app
 ![Image Text](Diagrama.png)
 ![Image Text](Diagrama%20despliegue.png)
 
